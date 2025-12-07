@@ -46,16 +46,16 @@
             <h2>Get Expert Dental Guidance in Delhi</h2>
             <p>Book your free consultation today and take the first step towards healthy, beautiful teeth.</p>
 
-            <input type="text" placeholder="Name">
-            <input type="number" placeholder="Mobile Number">
+            <input id="name-input" class="form-card-input" type="text" placeholder="Name">
+            <input class="form-card-input" type="number" placeholder="Mobile Number">
 
             <div class="captcha-box">
-                <input type="text" id="captcha" readonly placeholder="Captcha"
+                <input class="form-card-input" type="text" id="captcha" readonly placeholder="Captcha"
                     style="border-top-left-radius: 20px; border-bottom-left-radius: 20px;">
                 <p class="captcha-value" style="height: 43px; margin-top: 12px;">1234</p>
             </div>
 
-            <label class="check-line"><input type="checkbox"> I agree to Clove Dental’s Terms and Privacy Policy.
+            <label><input type="checkbox"> I agree to Clove Dental’s Terms and Privacy Policy.
             </label>
 
             <div>
@@ -65,13 +65,70 @@
     </section>
 
     <!-- FOOTER ICON STATS -->
-    <section class="stats">
-        <div class="stat-box">🏥 600+ Clinics</div>
-        <div class="stat-box">🦷 1300+ Dentists</div>
-        <div class="stat-box">😊 30 L+ Happy Patients</div>
-        <div class="stat-box">🦷 35K+ Ortho Cases</div>
-        <div class="stat-box">🔩 55K+ Implants Placed</div>
-    </section>
+    <div class="carousel">
+        <div class="group">
+            <div class="stat-box">
+                <span class="emoji">
+                    🏥
+                </span>
+                <span class="count">600+</span>
+                <span>
+                    Clinics
+                </span>
+            </div>
+            <div class="stat-box">
+                <span class="emoji">🦷</span>
+                <span class="count">1300</span>
+                <span>Dentists</span>
+            </div>
+            <div class="stat-box">
+                <span class="emoji">😊</span>
+                <span class="count">30 L+</span>
+                <span>Happy Patients</span>
+            </div>
+            <div class="stat-box">
+                <span class="emoji">🦷</span>
+                <span class="count">35K+</span>
+                <span></span>Ortho Cases
+            </div>
+            <div class="stat-box">
+                <span class="emoji">🔩</span>
+                <span class="count">55K+</span>
+                <span>Implants Placed</span>
+            </div>
+        </div>
+        <div aria-hidden class="group">
+            <div class="stat-box">
+                <span class="emoji">
+                    🏥
+                </span>
+                <span class="count">600+</span>
+                <span>
+                    Clinics
+                </span>
+            </div>
+            <div class="stat-box">
+                <span class="emoji">🦷</span>
+                <span class="count">1300</span>
+                <span>Dentists</span>
+            </div>
+            <div class="stat-box">
+                <span class="emoji">😊</span>
+                <span class="count">30 L+</span>
+                <span>Happy Patients</span>
+            </div>
+            <div class="stat-box">
+                <span class="emoji">🦷</span>
+                <span class="count">35K+</span>
+                <span></span>Ortho Cases
+            </div>
+            <div class="stat-box">
+                <span class="emoji">🔩</span>
+                <span class="count">55K+</span>
+                <span>Implants Placed</span>
+            </div>
+        </div>
+    </div>
 
 
     <!-- Why-Choose -->
@@ -85,24 +142,30 @@
 
             <!-- LEFT TEXT LIST -->
             <div class="choose-left">
-                <p>DORI - A.I. enabled Dental chair</p>
-                <p>10x Safety and 4 steps sterilization process</p>
-                <p>Experienced and Certified implantologist</p>
-                <p>Updated with world class equipments</p>
-                <p>Regular audits for safety protocols</p>
-            </div>
-
-            <!-- PLUS SIGNS -->
-            <div class="choose-plus">
-                <span>+</span>
-                <span>+</span>
-                <span>+</span>
-                <span>+</span>
-                <span>+</span>
+                <div>
+                    <p>DORI - A.I. enabled Dental chair</p>
+                    <p class="plus-sign">+</p>
+                </div>
+                <div>
+                    <p>10x Safety and 4 steps sterilization process</p>
+                    <p class="plus-sign">+</p>
+                </div>
+                <div>
+                    <p>Experienced and Certified implantologist</p>
+                    <p class="plus-sign">+</p>
+                </div>
+                <div>
+                    <p>Updated with world class equipments</p>
+                    <p class="plus-sign">+</p>
+                </div>
+                <div>
+                    <p>Regular audits for safety protocols</p>
+                    <p class="plus-sign">+</p>
+                </div>
             </div>
 
             <!-- IMAGE -->
-            <div class="choose-img">
+            <div class="choose-img choose-right">
                 <img src="./images/whyChooseUs.webp" alt="Doctors">
             </div>
 
@@ -113,17 +176,15 @@
     <!-- Happy-Clients -->
     <section class="testimonials">
         <h2 class="test-title">What Our Patients Say</h2>
-        <p class="test-sub">Real smiles, real stories. Here’s what our patients love about their CLOVE Dental
-            experience!</p>
-
-        <div class="slider">
-            <div class="slide-track">
+        <p class="test-sub">Real smiles, real stories. Here’s what our patients love about their CLOVE Dental experience!</p>
+        <div class="carousel">
+            <div class="group">
 
                 <!-- CARD 1 -->
                 <div class="card">
                     <img src="./images/p-1.webp" alt="patient">
                     <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
-                        <div >
+                        <div>
                             <h3>Shubham</h3>
                             <p class="city">Indore</p>
                         </div>
@@ -135,7 +196,7 @@
                 <div class="card">
                     <img src="./images/p-2.webp" alt="patient">
                     <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
-                        <div >
+                        <div>
                             <h3>Anita</h3>
                             <p class="city">Pune</p>
                         </div>
@@ -147,7 +208,7 @@
                 <div class="card">
                     <img src="./images/p-1.webp" alt="patient">
                     <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
-                        <div >
+                        <div>
                             <h3>Shubham</h3>
                             <p class="city">Indore</p>
                         </div>
@@ -159,7 +220,7 @@
                 <div class="card">
                     <img src="./images/p-2.webp" alt="patient">
                     <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
-                        <div >
+                        <div>
                             <h3>Anita</h3>
                             <p class="city">Pune</p>
                         </div>
@@ -171,7 +232,7 @@
                 <div class="card">
                     <img src="./images/p-1.webp" alt="patient">
                     <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
-                        <div >
+                        <div>
                             <h3>Shubham</h3>
                             <p class="city">Indore</p>
                         </div>
@@ -183,7 +244,7 @@
                 <div class="card">
                     <img src="./images/p-2.webp" alt="patient">
                     <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
-                        <div >
+                        <div>
                             <h3>Anita</h3>
                             <p class="city">Pune</p>
                         </div>
@@ -192,10 +253,10 @@
                 </div>
 
                 <!-- DUPLICATED CARDS for infinity loop -->
-               <div class="card">
+                <div class="card">
                     <img src="./images/p-1.webp" alt="patient">
                     <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
-                        <div >
+                        <div>
                             <h3>Shubham</h3>
                             <p class="city">Indore</p>
                         </div>
@@ -203,11 +264,110 @@
                     </div>
                 </div>
 
-                
+
                 <div class="card">
                     <img src="./images/p-2.webp" alt="patient">
                     <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
-                        <div >
+                        <div>
+                            <h3>Anita</h3>
+                            <p class="city">Pune</p>
+                        </div>
+                        <p class="tag aligners" style="margin-top: 7px;">Laser Treatment</p>
+                    </div>
+                </div>
+
+            </div>
+            <div aria-hidden class="group">
+
+                <!-- CARD 1 -->
+                <div class="card">
+                    <img src="./images/p-1.webp" alt="patient">
+                    <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
+                        <div>
+                            <h3>Shubham</h3>
+                            <p class="city">Indore</p>
+                        </div>
+                        <p class="tag aligners" style="margin-top: 7px;">Aligners</p>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="card">
+                    <img src="./images/p-2.webp" alt="patient">
+                    <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
+                        <div>
+                            <h3>Anita</h3>
+                            <p class="city">Pune</p>
+                        </div>
+                        <p class="tag aligners" style="margin-top: 7px;">Laser Treatment</p>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="card">
+                    <img src="./images/p-1.webp" alt="patient">
+                    <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
+                        <div>
+                            <h3>Shubham</h3>
+                            <p class="city">Indore</p>
+                        </div>
+                        <p class="tag aligners" style="margin-top: 7px;">Aligners</p>
+                    </div>
+                </div>
+
+                <!-- CARD 4 -->
+                <div class="card">
+                    <img src="./images/p-2.webp" alt="patient">
+                    <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
+                        <div>
+                            <h3>Anita</h3>
+                            <p class="city">Pune</p>
+                        </div>
+                        <p class="tag aligners" style="margin-top: 7px;">Laser Treatment</p>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="card">
+                    <img src="./images/p-1.webp" alt="patient">
+                    <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
+                        <div>
+                            <h3>Shubham</h3>
+                            <p class="city">Indore</p>
+                        </div>
+                        <p class="tag aligners" style="margin-top: 7px;">Aligners</p>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="card">
+                    <img src="./images/p-2.webp" alt="patient">
+                    <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
+                        <div>
+                            <h3>Anita</h3>
+                            <p class="city">Pune</p>
+                        </div>
+                        <p class="tag aligners" style="margin-top: 7px;">Laser Treatment</p>
+                    </div>
+                </div>
+
+                <!-- DUPLICATED CARDS for infinity loop -->
+                <div class="card">
+                    <img src="./images/p-1.webp" alt="patient">
+                    <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
+                        <div>
+                            <h3>Shubham</h3>
+                            <p class="city">Indore</p>
+                        </div>
+                        <p class="tag aligners" style="margin-top: 7px;">Aligners</p>
+                    </div>
+                </div>
+
+
+                <div class="card">
+                    <img src="./images/p-2.webp" alt="patient">
+                    <div style="display: flex; justify-content: space-between; padding: 0px 12px;">
+                        <div>
                             <h3>Anita</h3>
                             <p class="city">Pune</p>
                         </div>
